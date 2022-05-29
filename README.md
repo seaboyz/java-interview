@@ -44,6 +44,9 @@
     - [15. Explain heap space configuration.](#15-explain-heap-space-configuration)
         - [Motivation](#motivation-13)
         - [Answer](#answer-13)
+    - [16. Explain the stack space configuration.](#16-explain-the-stack-space-configuration)
+        - [Motivation](#motivation-14)
+        - [Answer](#answer-14)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -255,5 +258,19 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
   * or Out of memory errors will be thrown
 * You don't want space to be too small(garbage collection will keep happening)
 * You don't want space to be too big(waste of memory)
+
+### 16. Explain the stack space configuration.
+##### Motivation
+* Familiarity with the stack space
+* Configration flag details
+
+##### Answer
+* Configuration flag: -Xss
+* -Xss: initial stack size
+* Stack grows dynamically as the program runs
+* When all available stack space is used
+  * Stack overflow exception will be thrown
+* Usually not a big deal
+* Stack overflow usually happens when you have a circular invocation
   
 
