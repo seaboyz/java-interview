@@ -142,7 +142,13 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * Both are enviromenment variables
 * Path is an operation system specific variable that infuluesces what binaries(executable) are available for running
 * Classpath is a Java construct to indicate where all the compiled classes and jars are available. This could be multiple locations
+* Path: when I type `java` in the command line, ***JRE*** will search for the `java` binary in the PATH variable
+* classpath: all the directory of  packages and classes are available in the classpath, ***compilor*** will search for the class in the classpath at the time of compilation, to see if the class is available
 * 
+
+
+  
+
 
 
 
