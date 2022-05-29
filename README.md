@@ -5,8 +5,7 @@
 
 ## Conceptial Questions
 
-### Level 1
-#### What is Java?
+### What is Java?
 ##### Motivation
 * Familiarity with Java
 * Comparison with other languages (C, C++, C#, Python, Ruby, JavaScript, etc.)
@@ -16,4 +15,4 @@
 * Very popular today in server-side programming
 * Created by Sun Microsystems, released in 1995, and is now widely used in enterprise applications
 
-#### What are some freatures of Java?
+### What are some freatures of Java?
