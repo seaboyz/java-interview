@@ -13,6 +13,12 @@
     - [What is JRE?](#what-is-jre)
         - [Motivation](#motivation-3)
         - [Answer](#answer-3)
+    - [What is JDK?](#what-is-jdk)
+        - [Motivation](#motivation-4)
+        - [Answer](#answer-4)
+    - [What is the difference between JVM and JRE and JDK?](#what-is-the-difference-between-jvm-and-jre-and-jdk)
+        - [Motivation](#motivation-5)
+        - [Answer](#answer-5)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -72,4 +78,29 @@
 * The JRE orchestrates the activities of these software elements
 * Installed on machines that run Java
 
+### What is JDK?
+##### Motivation
+* Diffrence bwtween JDK and JRE
+* Characteristics of JDK
+* Role it plays in the development time(Author time)
+
+##### Answer
+* JDK - Java development kit
+* It is a set of tools to help developers write Java programs
+* Comes with a JRE(becuase you need a JRE to run the JDK)
+* Based off the Java language specification
+* Includes
+  * Java compiler
+  * Class libraries
+  * Utilities
+
+### What is the difference between JVM and JRE and JDK?
+##### Motivation
+* Characteristics of JVM and JRE and JDK
+* How they work together
+##### Answer
+* JDK - Software used for building Java applications
+* JRE - Software used for running Java applications
+* JVM - abstract virtual machine that the JRE spins up to run Java applications
+* 
 
