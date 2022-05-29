@@ -26,6 +26,9 @@
     - [9. What is the difference between Path and classpath?](#9-what-is-the-difference-between-path-and-classpath)
         - [Motivation](#motivation-7)
         - [Answer](#answer-7)
+    - [10. What is the difference between source path and classpath?](#10-what-is-the-difference-between-source-path-and-classpath)
+        - [Motivation](#motivation-8)
+        - [Answer](#answer-8)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -144,7 +147,18 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * Classpath is a Java construct to indicate where all the compiled classes and jars are available. This could be multiple locations
 * Path: when I type `java` in the command line, ***JRE*** will search for the `java` binary in the PATH variable
 * classpath: all the directory of  packages and classes are available in the classpath, ***compilor*** will search for the class in the classpath at the time of compilation, to see if the class is available
-* 
+  
+### 10. What is the difference between source path and classpath?
+##### Motivation
+* Understanding the project structure
+* Java IDE folder structure
+
+##### Answer
+* Sourcepath is where the classes reside(that you write and compile)
+* `src` directory is the default sourcepath
+* Classpath is where your dependencies are located - libraries, jars, etc.
+* Compile loads these when required for compilation.
+* Runtime can use these to load bytecode - class path scan
 
 
   
