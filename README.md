@@ -23,6 +23,9 @@
     - [8. What is Java bytecode?](#8-what-is-java-bytecode)
         - [Motivation](#motivation-6)
         - [Answer](#answer-6)
+    - [9. What is the difference between Path and classpath?](#9-what-is-the-difference-between-path-and-classpath)
+        - [Motivation](#motivation-7)
+        - [Answer](#answer-7)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -128,6 +131,17 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * Can not be run natively on a machine
 * Bycode is consistent across machines. But JVM implementation may vary
 * This enable the "Write Once, Run Anywhere" property of Java
+
+### 9. What is the difference between Path and classpath?
+##### Motivation
+* Understanding system variables
+* Understanding the classpath concept
+* Why we need to set this variables
+
+##### Answer
+* Both are enviromenment variables
+* Path is an operation system specific variable that infuluesces what binaries(executable) are available for running
+* Classpath is a Java construct to indicate where all the compiled classes and jars are available. This could be multiple locations
 * 
 
 
