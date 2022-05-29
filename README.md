@@ -10,6 +10,9 @@
     - [What is JVM?](#what-is-jvm)
         - [Motivation](#motivation-2)
         - [Answer](#answer-2)
+    - [What is JRE?](#what-is-jre)
+        - [Motivation](#motivation-3)
+        - [Answer](#answer-3)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -52,5 +55,21 @@
 * Has a specification that outlines how it should work
 * Diffrent implementation available
 * Essentialy in making Java platform agnostic(write once and run anywhere)
+
+### What is JRE?
+##### Motivation
+* Diffrence bwtween JVM and JRE
+* Characteristics of JRE
+* Role it plays in execution
+
+##### Answer
+* JRE - Java run time environment
+* It is a set of software elements that together provide the environment in which Java programs are executed
+* Constists of
+  * Class loader
+  * JVM
+  * Libraries and utilities
+* The JRE orchestrates the activities of these software elements
+* Installed on machines that run Java
 
 
