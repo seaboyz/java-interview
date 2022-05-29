@@ -29,6 +29,15 @@
     - [10. What is the difference between source path and classpath?](#10-what-is-the-difference-between-source-path-and-classpath)
         - [Motivation](#motivation-8)
         - [Answer](#answer-8)
+    - [11. What are the memory areas allocated in the JVM?](#11-what-are-the-memory-areas-allocated-in-the-jvm)
+        - [Motivation](#motivation-9)
+        - [Answer](#answer-9)
+    - [12. What is differnecce bwtween Java permgen and metaspace?](#12-what-is-differnecce-bwtween-java-permgen-and-metaspace)
+        - [Motivation](#motivation-10)
+        - [Answer](#answer-10)
+    - [13. What is garbage collection?](#13-what-is-garbage-collection)
+        - [Motivation](#motivation-11)
+        - [Answer](#answer-11)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -160,9 +169,58 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * Compile loads these when required for compilation.
 * Runtime can use these to load bytecode - class path scan
 
+### 11. What are the memory areas allocated in the JVM?
+##### Motivation
+* Distinction between heap and stack
+* Class area and native area
+##### Answer
+* Heap
+  * Space for objects in the memory
+  * "Global" - like shared space 
+  * When instances of objects are created, they are allocated in the heap
+  * Reference variables can point to objects base the the context
+  * Largest of the memory spaces
+* Stack
+  * Holds thread level data
+  * Local variables and object references
+  * Call frames for each method execution
+* Code area(meta space)
+  * Holds the bytecode, JIT info
+* Implementation / native area
+  * Resister
+  * C implementation stack
+  * a lot JVM are implemented in C and C++, JVM run on C and C++.
+  * The low level code to run the JVM
 
+### 12. What is differnecce bwtween Java permgen and metaspace?
+##### Motivation
+* Undersanding the the changes in memory management
+* Awareness of the metaspace
   
-
-
+##### Answer
+* Memory areas in the JVM
+* Before Java 8, there was a memory area called PermGen
+* Java 8 onwards, there is a new memory area called Metaspace
+* PermGen is gone!
+* Memory for the JVM is allocated in the Metaspace
+* PermGen had a fiexed max size allocated to it(configurable)
+* Metaspace grows dynamically as the program runs
+* Has maxMetaSpaceSize configuration. Triggers garbage collection when the metaspace exceeds this size
+* Because of class loading / unloading, the metaspace can grow and shrink, no "permanent generation" anymore
+  
+### 13. What is garbage collection?
+##### Motivation
+* Awareness of the process of garbage collection
+* Some details of working
+* Benefits and drawbacks
+  
+##### Answer
+* Process of removing unused and orphaned objects from the heap
+* Automatic process.Does not need programmer intervention
+* Has APIs to trigger programmaticlly(not recommended)
+* Generation based approach(young generation, old generation, permanent generation)
+* First in first out(FIFO)
+* Benefit - no manual memory management
+* Drawback - performance intrustion
 
 
