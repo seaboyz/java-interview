@@ -41,6 +41,9 @@
     - [14. What is JIT compiler?](#14-what-is-jit-compiler)
         - [Motivation](#motivation-12)
         - [Answer](#answer-12)
+    - [15. Explain heap space configuration.](#15-explain-heap-space-configuration)
+        - [Motivation](#motivation-13)
+        - [Answer](#answer-13)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -236,3 +239,21 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * Converts to the native instruction set of the CPU it is running on
 * Makes a judgement call based on usage of the bytecode, and performance characteristics
 * Hence "Just in time"
+
+### 15. Explain heap space configuration.
+##### Motivation
+* Familiarity with the heap space
+* Configration flag details
+* What informs the setting values?
+
+##### Answer
+* Configuration flag: -Xms, -Xmx
+* -Xms: initial memery allocation pool size(starting size of the heap)
+* -Xmx: maximum memory allocation pool size(don't go beyond this)
+* When max heap size is reached
+  * The JVM will start to collect garbage
+  * or Out of memory errors will be thrown
+* You don't want space to be too small(garbage collection will keep happening)
+* You don't want space to be too big(waste of memory)
+  
+
