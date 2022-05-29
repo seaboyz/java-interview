@@ -7,6 +7,9 @@
     - [What are some freatures of Java?](#what-are-some-freatures-of-java)
         - [Motivation](#motivation-1)
         - [Answer](#answer-1)
+    - [What is JVM?](#what-is-jvm)
+        - [Motivation](#motivation-2)
+        - [Answer](#answer-2)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -35,3 +38,19 @@
 * Architecture-neutral and platform-independent(write once and run anywhere, jvm - another abstraction layer)
 * High-performance(JIT compiler)
 * Interpreted, threaded and dynamic(compiled, bytecode is interpreted at the runtime, typing is statically checked, behavior is dynamic)
+
+### What is JVM?
+##### Motivation
+* Diffrence bwtween JVM and JRE
+* Characteristics of JVM
+* Role it plays in execution
+##### Answer
+* JVM - Java virtual machine
+* It's the runtime environment for Java programs, a extra layer of abstraction over the hardware
+* Takes the compiled bytecode and executes it
+* input to the JVM is the Bycode, output is the machine code
+* Has a specification that outlines how it should work
+* Diffrent implementation available
+* Essentialy in making Java platform agnostic(write once and run anywhere)
+
+
