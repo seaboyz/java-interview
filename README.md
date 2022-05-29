@@ -53,6 +53,14 @@
     - [18. What are the diffrent types of classloaders?](#18-what-are-the-diffrent-types-of-classloaders)
         - [Motivation](#motivation-16)
         - [Answer](#answer-16)
+    - [19. What is `public static void main(String[] args)`?](#19-what-is-public-static-void-mainstring-args)
+        - [Motivation](#motivation-17)
+        - [Answer](#answer-17)
+    - [20. What is the order of the modifiers are switched in the `public static void main`?](#20-what-is-the-order-of-the-modifiers-are-switched-in-the-public-static-void-main)
+        - [answer](#answer-18)
+    - [21. Can you run code before the main method starts?](#21-can-you-run-code-before-the-main-method-starts)
+        - [Motivation](#motivation-18)
+        - [Answer](#answer-19)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -306,3 +314,28 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
   * Core Java runtime classes
 * Custom classloader
 
+### 19. What is `public static void main(String[] args)`?
+##### Motivation
+* Familiarity with modifiers
+* Understanding the application startup process
+
+##### Answer
+* `public static void` are modifiers to a method called `main`
+* `public` - method is accessible outside the class
+* `static` - class instance is not required to run the method
+* `void` - method does not return any value
+* `main` - special name convention to indicate an execution entry point
+  
+### 20. What is the order of the modifiers are switched in the `public static void main`?
+##### answer
+* order of modifiers doesn't matter
+* Modifiers must be before the method
+
+### 21. Can you run code before the main method starts?
+##### Motivation
+* Understanding static block
+##### Answer
+* Yes, you can
+* This can be done by using static block
+* Static block is executed when the class is loaded
+* So, this runs before the main method is executed
