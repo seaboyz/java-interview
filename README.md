@@ -127,6 +127,8 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * JVM takes the bytecode and executes it
 * Can not be run natively on a machine
 * Bycode is consistent across machines. But JVM implementation may vary
+* This enable the "Write Once, Run Anywhere" property of Java
+* 
 
 
 
