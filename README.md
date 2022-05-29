@@ -50,6 +50,9 @@
     - [17. What is a classloader?](#17-what-is-a-classloader)
         - [Motivation](#motivation-15)
         - [Answer](#answer-15)
+    - [18. What are the diffrent types of classloaders?](#18-what-are-the-diffrent-types-of-classloaders)
+        - [Motivation](#motivation-16)
+        - [Answer](#answer-16)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -289,5 +292,17 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
   * Class loader tries to find it and loads it
   * If it can't find it, it will throw a ClassNotFoundException
 
+### 18. What are the diffrent types of classloaders?
+##### Motivation
+* Awareness of the class loading concept
 
+##### Answer
+* Application / System classloader
+  * Classes in the class path
+* Extension classloader
+  * Core Java JDK classes
+* Bootstrap classloader
+  * Loads the other classloaders
+  * Core Java runtime classes
+* Custom classloader
 
