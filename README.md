@@ -38,6 +38,9 @@
     - [13. What is garbage collection?](#13-what-is-garbage-collection)
         - [Motivation](#motivation-11)
         - [Answer](#answer-11)
+    - [14. What is JIT compiler?](#14-what-is-jit-compiler)
+        - [Motivation](#motivation-12)
+        - [Answer](#answer-12)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -223,4 +226,13 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * Benefit - no manual memory management
 * Drawback - performance intrustion
 
+### 14. What is JIT compiler?
+##### Motivation
+* Familiarity with the how JVM works
+* Bytecode vs native code
 
+##### Answer
+* JVM selecctively converts certain bytecode instructions to native code(machine code)
+* Converts to the native instruction set of the CPU it is running on
+* Makes a judgement call based on usage of the bytecode, and performance characteristics
+* Hence "Just in time"
