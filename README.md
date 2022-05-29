@@ -47,6 +47,9 @@
     - [16. Explain the stack space configuration.](#16-explain-the-stack-space-configuration)
         - [Motivation](#motivation-14)
         - [Answer](#answer-14)
+    - [17. What is a classloader?](#17-what-is-a-classloader)
+        - [Motivation](#motivation-15)
+        - [Answer](#answer-15)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -273,4 +276,18 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * Usually not a big deal
 * Stack overflow usually happens when you have a circular invocation
   
+### 17. What is a classloader?
+##### Motivation
+* Awareness of the class loading concept
+* Role of classloader
+
+##### Answer
+* Part of the JRE
+* It load Java classes into the runtime
+* This happens only when needed
+  * JVM requests a class
+  * Class loader tries to find it and loads it
+  * If it can't find it, it will throw a ClassNotFoundException
+
+
 
