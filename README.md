@@ -89,6 +89,9 @@
     - [31. Can you overload constructors? How does it work?](#31-can-you-overload-constructors-how-does-it-work)
         - [Motivation](#motivation-26)
         - [Answer](#answer-29)
+    - [32. How to copy a constructor?](#32-how-to-copy-a-constructor)
+        - [Motivation](#motivation-27)
+        - [Answer](#answer-30)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -518,3 +521,26 @@ class Person {
 ```
 * Overloaded contructor "hides" default no-arg constructor. Can't construct without those args anymore.
 * No-arg constructor has to be implemented by the programmer
+
+### 32. How to copy a constructor?
+##### Motivation
+* Constructor arguments
+* What is the pattern and when to use it
+##### Answer
+* Specific pattern used to create a new object as a copy of another object
+* Custtrotor of a class takes as argument of the same class type
+* Constructor copies memebers from that instance
+```java
+class Person {
+  String name;
+  int age;
+  Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+  Person(Person p) {
+    this.name = p.name;
+    this.age = p.age;
+  }
+}
+```
