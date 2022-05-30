@@ -61,6 +61,9 @@
     - [21. Can you run code before the main method starts?](#21-can-you-run-code-before-the-main-method-starts)
         - [Motivation](#motivation-18)
         - [Answer](#answer-19)
+    - [22. What is the difference between float and double?](#22-what-is-the-difference-between-float-and-double)
+        - [Motivation](#motivation-19)
+        - [Answer](#answer-20)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -339,3 +342,20 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * This can be done by using static block
 * Static block is executed when the class is loaded
 * So, this runs before the main method is executed
+
+### 22. What is the difference between float and double?
+##### Motivation
+* Knowledge of primitive number types
+* Familiarity with precision
+* Knowledge of sizes allocated
+
+##### Answer
+* Both are real numbers
+* Both are imprecise(need inifinite precision)
+* Float takes 32 bit. Double takes 64 bit.
+* Can not use equality operator to compare float and double
+* Double is literally double the size of float
+* Double has more precision than float
+* By default, floating point numbers are double
+* Use float mostly for space optimization
+* A double can be cast to a float(with possible loss of precision)
