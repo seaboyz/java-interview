@@ -95,6 +95,9 @@
     - [33. What is constructor chaining?](#33-what-is-constructor-chaining)
         - [Motivation](#motivation-28)
         - [Answer](#answer-31)
+    - [34. What is the singleton pattern?](#34-what-is-the-singleton-pattern)
+        - [Motivation](#motivation-29)
+        - [Answer](#answer-32)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -570,3 +573,32 @@ class Person {
   }
 }
 ```
+
+### 34. What is the singleton pattern?
+##### Motivation
+* Design pattern
+* How to implement it in java
+* Benefits of using it
+##### Answer
+* Singleton pattern is a design pattern that restricts the instantiation of a class to one object.
+* Java naturally allows multiple instances. The requirement is to enforce one instance.
+* Done by
+  * Private constructor
+  * Static instance
+  * Static method that returns the instance
+```java
+class Person {
+  private static Person instance = new Person();
+
+  private Person() {
+  }
+
+  public static Person getInstance() {
+    return instance;
+  }
+}
+```
+* Benefits and uses
+  * Single instance guaranteed
+  * Useful for certain objects Example: DB connection
+  * Controlled life cycle
