@@ -92,6 +92,9 @@
     - [32. How to copy a constructor?](#32-how-to-copy-a-constructor)
         - [Motivation](#motivation-27)
         - [Answer](#answer-30)
+    - [33. What is constructor chaining?](#33-what-is-constructor-chaining)
+        - [Motivation](#motivation-28)
+        - [Answer](#answer-31)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -541,6 +544,29 @@ class Person {
   Person(Person p) {
     this.name = p.name;
     this.age = p.age;
+  }
+}
+```
+
+
+### 33. What is constructor chaining?
+##### Motivation
+* What is the pattern and when to use it
+* Why do you need it
+##### Answer
+* Constructor chaining is a pattern that allows you to call a constructor from another constructor to delegate part of the initialization 
+* Usually constructor with more args delegates to constructor with less args
+```java
+class Person {
+  String name;
+  int age;
+  Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+  Person(String name) {
+    // this has to be the very first line in the constructor
+    this(name, 0);
   }
 }
 ```
