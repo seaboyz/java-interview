@@ -67,6 +67,13 @@
     - [23. Why would you need a break in a switch statement?](#23-why-would-you-need-a-break-in-a-switch-statement)
         - [Motivation](#motivation-20)
         - [Answer](#answer-21)
+    - [24. What are the primitive types in java?](#24-what-are-the-primitive-types-in-java)
+        - [Motivation](#motivation-21)
+        - [Answer](#answer-22)
+    - [25. What is default value of local variables?](#25-what-is-default-value-of-local-variables)
+        - [answer](#answer-23)
+    - [26. Why does complier complain about local varibles initialization?](#26-why-does-complier-complain-about-local-varibles-initialization)
+        - [Answer](#answer-24)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -377,3 +384,33 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * One way to break it is using a break statement
 * Can be used without break to group serveral matching statements
   
+### 24. What are the primitive types in java?
+##### Motivation
+* List of primitive types
+* Nature of date
+* Space consumed
+
+##### Answer
+* Primitive types are:
+  * byte - 8 bit signed two's complement integer
+  * short - 16 bit signed two's complement integer
+  * int - 32 bit signed two's complement integer
+  * long - 64 bit two's complement integer(signed / unsigned)
+  * float - 32 bit floating point
+  * double - 64 bit floating point
+  * char - 16 bit unicode character
+  * boolean - One of two values: true or false, Size unknown
+
+### 25. What is default value of local variables?
+##### answer
+* The local variable do not have default value.
+* They need to be initialized explicitly by the programmer
+* Does bot happen automatically.
+
+### 26. Why does complier complain about local varibles initialization?
+##### Answer
+* Java does not initialize local variables automatically
+* If you call the local variable before it is initialized, it will throw a compiler error
+* These local varibles could be primitive types or reference types
+* Ebore "using" a local variable, you need to have put some value to it first.
+* Can be completly uninitialized. As long as it is not used, it will not be initialized.
