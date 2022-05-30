@@ -80,6 +80,9 @@
     - [28. Can a byte be cast into a double?](#28-can-a-byte-be-cast-into-a-double)
         - [Motivation](#motivation-23)
         - [Answer](#answer-26)
+    - [29. How do you break a nested loop?](#29-how-do-you-break-a-nested-loop)
+        - [Motivation](#motivation-24)
+        - [Answer](#answer-27)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -448,3 +451,25 @@ System.out.println(d);
 * This is called implicit casting
   * When the lower precision number is assigned to a higher precision number
 * No possible loss of data(lossless conversion)
+
+### 29. How do you break a nested loop?
+##### Motivation
+* Break statement with label
+* Thoughts on best practice
+  * Like a goto statement
+  * should be used with caution
+##### Answer
+* Break statement with label
+```java
+outer:
+for (int i = 0; i < 10; i++) {
+  for (int j = 0; j < 10; j++) {
+    if (i == 5) {
+      break outer;
+    }
+  }
+}
+```
+* Indicates the statent to break out of, not where to go to
+* Not a "bad" thing to use
+* Diffrent from goto statement in that you cannot alter the flow of control
