@@ -83,6 +83,12 @@
     - [29. How do you break a nested loop?](#29-how-do-you-break-a-nested-loop)
         - [Motivation](#motivation-24)
         - [Answer](#answer-27)
+    - [30. What are the diffrent access modifiers?](#30-what-are-the-diffrent-access-modifiers)
+        - [Motivation](#motivation-25)
+        - [Answer](#answer-28)
+    - [31. Can you overload constructors? How does it work?](#31-can-you-overload-constructors-how-does-it-work)
+        - [Motivation](#motivation-26)
+        - [Answer](#answer-29)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -473,3 +479,42 @@ for (int i = 0; i < 10; i++) {
 * Indicates the statent to break out of, not where to go to
 * Not a "bad" thing to use
 * Diffrent from goto statement in that you cannot alter the flow of control
+
+### 30. What are the diffrent access modifiers?
+##### Motivation
+* Familiarity with modifiers
+* Java access rules and diffrent types of access modifiers
+##### Answer
+* Private
+  * Within the class only
+* Pckage private(default)
+  * Within the package only
+* Protected
+  * Within the same package and subclasses
+* Public
+  * Cab be accessed by all
+
+### 31. Can you overload constructors? How does it work?
+##### Motivation
+* Method overloading concept
+* Constructor arguments with new operator
+##### Answer
+* Yes, you can
+* Same concept as method overloading.Diffrent is that you can use the new operator to create an object
+* diffrent arguments list
+* Needs arguments passed via new keyword constructor invocation
+```java
+class Person {
+  String name;
+  int age;
+  Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+  Person(String name) {
+    this.name = name;
+  }
+}
+```
+* Overloaded contructor "hides" default no-arg constructor. Can't construct without those args anymore.
+* No-arg constructor has to be implemented by the programmer
