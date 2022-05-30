@@ -77,6 +77,9 @@
     - [27. Can a double be cast into a byte?](#27-can-a-double-be-cast-into-a-byte)
         - [Motivation](#motivation-22)
         - [Answer](#answer-25)
+    - [28. Can a byte be cast into a double?](#28-can-a-byte-be-cast-into-a-double)
+        - [Motivation](#motivation-23)
+        - [Answer](#answer-26)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -429,3 +432,19 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 byte b = (byte) d;
 ```
 * Possible loss of data(lossy conversion)
+
+### 28. Can a byte be cast into a double?
+##### Motivation
+* Understanding the precision
+* Implicit casting
+##### Answer
+* A byte does not need to be cast to a double
+* It can be automatically assigned
+```java
+byte b = 1;
+double d = b;
+System.out.println(d);
+```
+* This is called implicit casting
+  * When the lower precision number is assigned to a higher precision number
+* No possible loss of data(lossless conversion)
