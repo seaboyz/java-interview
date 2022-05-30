@@ -74,6 +74,9 @@
         - [answer](#answer-23)
     - [26. Why does complier complain about local varibles initialization?](#26-why-does-complier-complain-about-local-varibles-initialization)
         - [Answer](#answer-24)
+    - [27. Can a double be cast into a byte?](#27-can-a-double-be-cast-into-a-byte)
+        - [Motivation](#motivation-22)
+        - [Answer](#answer-25)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -414,3 +417,15 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * These local varibles could be primitive types or reference types
 * Ebore "using" a local variable, you need to have put some value to it first.
 * Can be completly uninitialized. As long as it is not used, it will not be initialized.
+
+### 27. Can a double be cast into a byte?
+##### Motivation
+* Understanding the casting process
+* Understanding the precision of floating point numbers
+##### Answer
+* Yes, you can. A higher precision floating point number can be cast to a lower precision floating point number
+* This needs explicit casting
+```java
+byte b = (byte) d;
+```
+* Possible loss of data(lossy conversion)
