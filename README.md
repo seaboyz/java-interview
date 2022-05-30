@@ -98,6 +98,9 @@
     - [34. What is the singleton pattern?](#34-what-is-the-singleton-pattern)
         - [Motivation](#motivation-29)
         - [Answer](#answer-32)
+    - [35. What is auto-boxing and unboxing?](#35-what-is-auto-boxing-and-unboxing)
+        - [Motivation](#motivation-30)
+        - [Answer](#answer-33)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -602,3 +605,26 @@ class Person {
   * Single instance guaranteed
   * Useful for certain objects Example: DB connection
   * Controlled life cycle
+
+### 35. What is auto-boxing and unboxing?
+##### Motivation
+* Knowledge of diffrent wrapper classes
+* Why are they needed
+* Boxing and unboxing behavior
+
+##### Answer
+* Java has an automatic mechanism for converting primitive types to their corresponding wrapper classes and vice versa.
+* you don't need to call the constructor of the wrapper class for create a new object
+* Assiemments work with primitive types
+```java
+int i = 1;
+Integer i2 = 2;// equivalent to Integer i2 = new Integer(2);
+```
+* Method arguments and collections work
+```java
+List<Integer> list = new ArrayList<Integer>();
+list.add(1);
+list.add(2);
+list.add(3);
+```
+
