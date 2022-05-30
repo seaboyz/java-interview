@@ -64,6 +64,9 @@
     - [22. What is the difference between float and double?](#22-what-is-the-difference-between-float-and-double)
         - [Motivation](#motivation-19)
         - [Answer](#answer-20)
+    - [23. Why would you need a break in a switch statement?](#23-why-would-you-need-a-break-in-a-switch-statement)
+        - [Motivation](#motivation-20)
+        - [Answer](#answer-21)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -359,3 +362,18 @@ Jikes RVM (Jikes Research Virtual Machine) – research project. PPC and IA-32. 
 * By default, floating point numbers are double
 * Use float mostly for space optimization
 * A double can be cast to a float(with possible loss of precision)
+
+### 23. Why would you need a break in a switch statement?
+##### Motivation
+* understanding the switch statement fall through pattern
+* What happens if you don't use a break?
+* Possible uses of the fall through behavior
+
+##### Answer
+* Switch case statements are't "discrete"
+* If / else is discrete(ether if executes or else executes) 
+* There isn't a one-to-one map between the matched case the block, if there is not break, the next case will be executed
+* Case match is for where the execution starts. After that, execution falls through to the next case all the way to the end of the switch.
+* One way to break it is using a break statement
+* Can be used without break to group serveral matching statements
+  
