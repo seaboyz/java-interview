@@ -101,6 +101,9 @@
     - [35. What is auto-boxing and unboxing?](#35-what-is-auto-boxing-and-unboxing)
         - [Motivation](#motivation-30)
         - [Answer](#answer-33)
+    - [36. What is the final keyword?](#36-what-is-the-final-keyword)
+        - [Motivation](#motivation-31)
+        - [Answer](#answer-34)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -628,3 +631,40 @@ list.add(2);
 list.add(3);
 ```
 
+### 36. What is the final keyword?
+##### Motivation
+* Understaning of modifiers
+* Immutability concept
+* Limitations with object references
+* Other uses
+  * final class
+  * final field
+  * final method
+  * final variable
+##### Answer
+* Final keyword marks something as in its final state and not to be changed
+* On a varibalbe, it means that it is immutable(At least on primitive types)
+```java
+final int i = 1;
+```
+* On object refrence, that means the freference is constant, but the object instance is not
+```java
+final Person p = new Person();// p can not point to another object
+```
+
+* On a method, that means the method is final and cannot be overridden in the children class
+```java
+final void method() {
+}
+```
+* On a class, that means the class is final and cannot be extended in the children class
+```java
+final class Person {
+}// Person can not be extended,can not be inherited
+```
+* On a field, that means the field is final and cannot be overridden in the children class
+```java
+final class Person {
+  final int age;
+}
+```
