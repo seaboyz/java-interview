@@ -134,6 +134,9 @@
     - [46. What is the superclass of all classes in java?](#46-what-is-the-superclass-of-all-classes-in-java)
         - [Motivation](#motivation-41)
         - [Answer](#answer-44)
+    - [47. What is static modifier?](#47-what-is-static-modifier)
+        - [Motivation](#motivation-42)
+        - [Answer](#answer-45)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -880,4 +883,22 @@ class Person {
   * `toString()`
   * `equals()`
   * `hashCode()`
+
+### 47. What is static modifier?
+##### Motivation
+* familiarity with the java instance
+* Instance value vs "global"
+##### Answer
+* (static varibles) not associated with any instance
+  * When you need to store data that is relivent across instances (static variables)
+  * Example:
+  `Math.PI`
+* static method
+  * when you need to provide method before creating the instance
+  * `public static main(String[] args){}`
+* static block
+  * when you need the code to be executed  before creating the instance
+  * `static { }`
+  * Example:
+  `static { System.out.println("Hello"); }`
 
