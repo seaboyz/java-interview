@@ -140,6 +140,15 @@
     - [48. What is the differnce between .equals() and ==?](#48-what-is-the-differnce-between-equals-and-)
         - [Motivation](#motivation-43)
         - [Answer](#answer-46)
+    - [49. What are the fifferent varible scopes in java?](#49-what-are-the-fifferent-varible-scopes-in-java)
+        - [Motivation](#motivation-44)
+        - [Answer](#answer-47)
+    - [50. `Overloading` vs `Overriding`](#50-overloading-vs-overriding)
+        - [Motivation](#motivation-45)
+        - [Answer](#answer-48)
+    - [51. `continue` vs `break` in java](#51-continue-vs-break-in-java)
+        - [Motivation](#motivation-46)
+        - [Answer](#answer-49)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -915,3 +924,75 @@ class Person {
 * Only compare the values of reference to the object
 * Every object inherits equals method from the ```Object``` class
 * Classes can implement their own `equals` method to check for equality
+
+### 49. What are the fifferent varible scopes in java?
+##### Motivation
+* Understanding of scoping
+* What forms a scope
+##### Answer
+* class level scope
+  * member variables
+* Method level scope
+  * local variables
+  * parameters
+  * return values
+* Block level scope
+  * loops 
+  * if blocks
+
+### 50. `Overloading` vs `Overriding`
+##### Motivation
+* Understanding of the concept
+* How overloading works with overriding
+##### Answer
+* Overloading
+  * Overloading is when you have multiple methods with the same name but different signatures(arguments)
+  * Argumetns dicide which one to call
+* Overriding
+  * A child class providing implementation to change the behavior of the inherited method
+  * Instance decide which one gets called
+* Overriden methods can be overloaded
+ 
+### 51. `continue` vs `break` in java
+##### Motivation
+* Understanding of loops and control flow
+* When to use continue
+* When to use break
+* Sample situation
+##### Answer
+* Both are used in loops
+* Break is used to  end the loop immediately
+* Continue is used to end the particular ***iteration*** of the loop
+* Example:
+ * Looping an array until you find a value
+```java
+for(int i = 0; i < array.length; i++) {
+  if(array[i] == value) {
+    break;
+  }
+}
+```
+* Example:
+ * Processing every element, but skipping some on some condition
+```java
+for(int i = 0; i < array.length; i++) {
+  if(array[i] == value) {
+    continue;
+  }
+  // do something with array[i]
+}
+```
+* `break` in `switch`
+  * Example:
+```java
+switch(value) {
+  case 1:
+    System.out.println("one");
+    break;
+  case 2:
+    System.out.println("two");
+    break;
+  default:
+    System.out.println("other");
+}
+```
