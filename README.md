@@ -104,6 +104,12 @@
     - [36. What is the final keyword?](#36-what-is-the-final-keyword)
         - [Motivation](#motivation-31)
         - [Answer](#answer-34)
+    - [37. What are wrapper classes?](#37-what-are-wrapper-classes)
+        - [Motivation](#motivation-32)
+        - [Answer](#answer-35)
+    - [38. What is encapsulation?](#38-what-is-encapsulation)
+        - [Motivation](#motivation-33)
+        - [Answer](#answer-36)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -668,3 +674,41 @@ final class Person {
   final int age;
 }
 ```
+
+### 37. What are wrapper classes?
+##### Motivation
+* Knowldge of diffrent wrapper classes
+* Why are they are used
+* Boxing and unboxing behavior
+##### Answer
+* Classes corresponding to primitive types - that "wrap" primitive values
+* Used to with Collections -Java collections support only reference types only
+* byte, short, int, long, float, double, char, boolean
+* Byte, Short, Integer, Long, Float, Double, Character, Boolean
+
+### 38. What is encapsulation?
+##### Motivation
+* Concept understanding
+##### Answer
+* Encapsulation is the process of restricting access to the inner implementation details of a class. It enforces abstracton concepts by not just ***hiding*** but by guaranteeing the internals are not exposed.
+* it is not just the outer do not see it, the outer is imposible to see it.
+* Example:
+```java
+class Person {
+  private String name;
+  private int age;
+  public Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+  public String getName() {
+    return name;
+  }
+  public int getAge() {
+    return age;
+  }
+}
+```
+* Manifests in class desgin using access modifiers - like private.
+* Benefits include ability to refactor/change internals without breaking others
+
