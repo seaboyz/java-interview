@@ -137,6 +137,9 @@
     - [47. What is static modifier?](#47-what-is-static-modifier)
         - [Motivation](#motivation-42)
         - [Answer](#answer-45)
+    - [48. What is the differnce between .equals() and ==?](#48-what-is-the-differnce-between-equals-and-)
+        - [Motivation](#motivation-43)
+        - [Answer](#answer-46)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -902,3 +905,13 @@ class Person {
   * Example:
   `static { System.out.println("Hello"); }`
 
+### 48. What is the differnce between .equals() and ==?
+##### Motivation
+* Object reference comparison vs value comparison
+##### Answer
+* `==` is an operator that compares two values for equality
+* Works with primitive type. 
+* Does not work with reference type
+* Only compare the values of reference to the object
+* Every object inherits equals method from the ```Object``` class
+* Classes can implement their own `equals` method to check for equality
