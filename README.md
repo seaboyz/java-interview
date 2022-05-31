@@ -107,9 +107,15 @@
     - [37. What are wrapper classes?](#37-what-are-wrapper-classes)
         - [Motivation](#motivation-32)
         - [Answer](#answer-35)
-    - [38. What is encapsulation?](#38-what-is-encapsulation)
+    - [38. What is ***this*** keyword?](#38-what-is-this-keyword)
         - [Motivation](#motivation-33)
         - [Answer](#answer-36)
+    - [39. What is abstraction?](#39-what-is-abstraction)
+        - [Motivation](#motivation-34)
+        - [Answer](#answer-37)
+    - [40. What is encapsulation?](#40-what-is-encapsulation)
+        - [Motivation](#motivation-35)
+        - [Answer](#answer-38)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -686,7 +692,60 @@ final class Person {
 * byte, short, int, long, float, double, char, boolean
 * Byte, Short, Integer, Long, Float, Double, Character, Boolean
 
-### 38. What is encapsulation?
+
+### 38. What is ***this*** keyword?
+##### Motivation
+* The object reference
+* Why do you need it?
+##### Answer
+* This is a reference that points the object whose code (method) is executing.
+* Used only in instance methods(Can not be used in static methods)
+* Useful for accessing member variables when shadowed
+```java
+class Person {
+  private String name;
+  private int age;
+  public Person(String name, int age) {
+    this.name = name; 
+    this.age = age;
+  }
+}
+```
+```java
+class Person {
+  private String name;
+  private int age;
+  public Person(String name){
+    this.name = name;
+  }
+  public Person(String name, int age) {
+    this(name);
+    this.age = age;
+  }
+}
+```
+
+### 39. What is abstraction?
+##### Motivation
+* Concept understanding
+* How it affects the class design
+* Interface vs implementation
+##### Answer
+* Abstraction is the design principle of separating the interface from the implementation so that the consumer / client only concerned with the interface.
+* Example:
+  * Button on an electric / electronic device vs internal circuit board
+  * Manifests in the class design using interfaces (and sometimes abstract classes)
+* abstract classes vs interfaces
+  * abstract classes are used for consolidating common methods and variables are exsiting in multiple classes
+  * abstract classes are for author 
+  * interface is for consumer
+* Abstraction vs encapuslation
+  * Abstracton cab be enforced by encapsulation
+  * encapuslation is strict abstraction and is guranteed can not be accessed
+  * abstraction hides implementation details
+  * encapsulation protects the implementation details from access
+  
+### 40. What is encapsulation?
 ##### Motivation
 * Concept understanding
 ##### Answer
@@ -711,4 +770,4 @@ class Person {
 ```
 * Manifests in class desgin using access modifiers - like private.
 * Benefits include ability to refactor/change internals without breaking others
-
+  
