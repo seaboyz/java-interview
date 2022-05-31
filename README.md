@@ -119,6 +119,9 @@
     - [41. How does a constructor work?](#41-how-does-a-constructor-work)
         - [Motivation](#motivation-36)
         - [Answer](#answer-39)
+    - [42. What is marker interface in java?](#42-what-is-marker-interface-in-java)
+        - [Motivation](#motivation-37)
+        - [Answer](#answer-40)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -800,4 +803,13 @@ class Person {
 * constructor exits by default(no args constructor)
 * You can implement or parameterize the constructor
 
-  
+### 42. What is marker interface in java?
+##### Motivation
+* Why are they used
+* example
+##### Answer
+* An interface that marks or "tags" classes and their corresponding instances
+* Don't have any methods of their own
+* Example: Serializable, Cloneable, Comparable
+* Formerly used because annotations didn't exist
+* Not recommended these days
