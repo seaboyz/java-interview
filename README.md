@@ -122,6 +122,9 @@
     - [42. What is marker interface in java?](#42-what-is-marker-interface-in-java)
         - [Motivation](#motivation-37)
         - [Answer](#answer-40)
+    - [43. What is the initial value of instance variables?](#43-what-is-the-initial-value-of-instance-variables)
+        - [Motivation](#motivation-38)
+        - [Answer](#answer-41)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -813,3 +816,24 @@ class Person {
 * Example: Serializable, Cloneable, Comparable
 * Formerly used because annotations didn't exist
 * Not recommended these days
+
+
+### 43. What is the initial value of instance variables?
+##### Motivation
+* Understading of the default values
+* Constrast with local variables
+
+##### Answer
+* Instance varaibles don't need to be initialized
+* Constrasts with local variables that error when used without initialization
+* Primitive values take "default" values
+  * `0` for numeric types
+  * `\000` for char
+  * `false` for boolean
+  * `null` for reference types
+* Recommended initialization in constructor(especially object reference)
+  * if you don't initialize, it will be null
+  * at the runtime, you will get `NullPointerException`
+
+
+
