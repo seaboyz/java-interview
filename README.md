@@ -116,6 +116,9 @@
     - [40. What is encapsulation?](#40-what-is-encapsulation)
         - [Motivation](#motivation-35)
         - [Answer](#answer-38)
+    - [41. How does a constructor work?](#41-how-does-a-constructor-work)
+        - [Motivation](#motivation-36)
+        - [Answer](#answer-39)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -770,4 +773,31 @@ class Person {
 ```
 * Manifests in class desgin using access modifiers - like private.
 * Benefits include ability to refactor/change internals without breaking others
+
+### 41. How does a constructor work?
+##### Motivation
+* Object creation and memory allocation
+* How constructor is called
+* Diffrence from methods
+##### Answer
+* A method that can initialize values of an object
+* The runtime creates an instance. You can work on the instance before it is ready
+* for doing all the prep work for the instance
+* Looks like any instance method but is not.
+  * No return
+  * specific naming convention
+* Invoked by the new operator + object creation process
+```java
+class Person {
+  private String name;
+  private int age;
+  public Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+```
+* constructor exits by default(no args constructor)
+* You can implement or parameterize the constructor
+
   
