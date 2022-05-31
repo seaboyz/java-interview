@@ -125,6 +125,9 @@
     - [43. What is the initial value of instance variables?](#43-what-is-the-initial-value-of-instance-variables)
         - [Motivation](#motivation-38)
         - [Answer](#answer-41)
+    - [44. What is method overriding?](#44-what-is-method-overriding)
+        - [Motivation](#motivation-39)
+        - [Answer](#answer-42)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -835,5 +838,16 @@ class Person {
   * if you don't initialize, it will be null
   * at the runtime, you will get `NullPointerException`
 
+### 44. What is method overriding?
+##### Motivation
+* Parent class and sub class concept
+* How to override a method
+* What it results in (polymorphism)
+##### Answer
+* Overriding is when a subclass changes the behavior of an inherited method
+* Done by the subcalss implementing a method with the same signature as the parent class
+* Works for multiple levels too. Methods can be overridden irrespective of where it inherited from.
+* It can be overridden the method inherited from the `Object` class
+* Actual method gets resolved at runtime. This allows for polymorphism.(runtime polymorphism)
 
 
