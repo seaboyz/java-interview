@@ -128,6 +128,9 @@
     - [44. What is method overriding?](#44-what-is-method-overriding)
         - [Motivation](#motivation-39)
         - [Answer](#answer-42)
+    - [45. Is java Pass by value or pass by reference?](#45-is-java-pass-by-value-or-pass-by-reference)
+        - [Motivation](#motivation-40)
+        - [Answer](#answer-43)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -850,4 +853,18 @@ class Person {
 * It can be overridden the method inherited from the `Object` class
 * Actual method gets resolved at runtime. This allows for polymorphism.(runtime polymorphism)
 
+### 45. Is java Pass by value or pass by reference?
+##### Motivation
+* Familiarity with the java instance
+* Understanding of the difference between primitive and reference types
+##### Answer
+* ***Java is pass by value***
+* for primitive types
+  * the variable holds the actual value of the primitive type
+  * it is passed by value
+* for reference types
+  * the variable holds the reference to the object allocated in the heap(never use pointer)
+  * it is passed by the value of the reference
+ 
+ 
 
