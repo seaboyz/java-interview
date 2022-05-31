@@ -131,6 +131,9 @@
     - [45. Is java Pass by value or pass by reference?](#45-is-java-pass-by-value-or-pass-by-reference)
         - [Motivation](#motivation-40)
         - [Answer](#answer-43)
+    - [46. What is the superclass of all classes in java?](#46-what-is-the-superclass-of-all-classes-in-java)
+        - [Motivation](#motivation-41)
+        - [Answer](#answer-44)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -866,5 +869,15 @@ class Person {
   * the variable holds the reference to the object allocated in the heap(never use pointer)
   * it is passed by the value of the reference
  
- 
+### 46. What is the superclass of all classes in java?
+##### Motivation
+* `Object` superclass
+* What it provides
+##### Answer
+* `Object` is the superclass of all classes in java
+* Root of the inheritance hierarchy
+* `Object` class contains some handy methods like
+  * `toString()`
+  * `equals()`
+  * `hashCode()`
 
