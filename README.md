@@ -149,6 +149,8 @@
     - [51. `continue` vs `break` in java](#51-continue-vs-break-in-java)
         - [Motivation](#motivation-46)
         - [Answer](#answer-49)
+    - [52. Can static methods be overridden?](#52-can-static-methods-be-overridden)
+        - [answer](#answer-50)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -996,3 +998,8 @@ switch(value) {
     System.out.println("other");
 }
 ```
+
+### 52. Can static methods be overridden?
+##### answer
+* static method can not be overridden in java
+* Method overriding has been designed to work with polymorphism
