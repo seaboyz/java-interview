@@ -203,6 +203,7 @@
 * Created by Sun Microsystems, released in 1995, and is now widely used in enterprise applications
 
 ### 2. What are some freatures of Java?
+(Why java is platform independent?)
 ##### Motivation
 * Awareness of what the Java has to offer
 * Comparison with other languages (C, C++, C#, Python, Ruby, JavaScript, etc.)
@@ -210,7 +211,7 @@
 ##### Answer
 * Simple, object-oriented, and familiar syntax to c and c++ programmers
 * Robust and secure(virtual machine)
-* Architecture-neutral and platform-independent(write once and run anywhere, jvm - another abstraction layer)
+* Architecture-neutral and ***platform-independent***(write once and run anywhere, jvm - another abstraction layer)
 * High-performance(JIT compiler)
 * Interpreted, threaded and dynamic(compiled, bytecode is interpreted at the runtime, typing is statically checked, behavior is dynamic)
 
