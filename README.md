@@ -185,6 +185,7 @@
       - [Describe Abstract in OOP](#describe-abstract-in-oop-1)
       - [what is Java streaming?](#what-is-java-streaming-1)
       - [difrenerence between Throw and Throws?](#difrenerence-between-throw-and-throws)
+      - [what is pojo design pattern?](#what-is-pojo-design-pattern)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -1073,3 +1074,6 @@ switch(value) {
 #### Describe Abstract in OOP
 #### what is Java streaming?
 #### difrenerence between Throw and Throws? 
+
+#### what is pojo design pattern?
+* ***Transfer Object*** is a simple POJO class having ***getter/setter*** methods and is ***serialized*** so that it can be ***transferred over the network***. Server Side business class normally fetches data from the database and fills the POJO and sends it to the client or passes it by value. For clients, the transfer object is read-only. The client can create its own transfer object and pass it to the server to update values in the database in one shot. 
