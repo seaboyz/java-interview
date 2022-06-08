@@ -151,6 +151,40 @@
         - [Answer](#answer-49)
     - [52. Can static methods be overridden?](#52-can-static-methods-be-overridden)
         - [answer](#answer-50)
+    - [Core Java and OOP(Infosys questions)](#core-java-and-oopinfosys-questions)
+      - [What is DAO?](#what-is-dao)
+      - [Difference between abstract classes and interfaces?](#difference-between-abstract-classes-and-interfaces)
+      - [What is Encapsulation and Abstraction?](#what-is-encapsulation-and-abstraction)
+      - [Analytical question: Difference between method and function..](#analytical-question-difference-between-method-and-function)
+      - [How to handle class not found exception](#how-to-handle-class-not-found-exception)
+      - [Describe one thin that introduced in the java 8?](#describe-one-thin-that-introduced-in-the-java-8)
+      - [Tell me about functional interface?](#tell-me-about-functional-interface)
+      - [Do you know Method References?](#do-you-know-method-references)
+      - [Difference between lambda expression and method reference?](#difference-between-lambda-expression-and-method-reference)
+      - [Tell me about Stream API?](#tell-me-about-stream-api)
+      - [When is each method of software development apply?](#when-is-each-method-of-software-development-apply)
+      - [What is java 8 features?](#what-is-java-8-features)
+      - [Describe Abstract in OOP](#describe-abstract-in-oop)
+      - [what is Java streaming?](#what-is-java-streaming)
+      - [core java: polymorphism, abstract classes and interfaces(difference), AbstractionAws, aws](#core-java-polymorphism-abstract-classes-and-interfacesdifference-abstractionaws-aws)
+      - [storage class](#storage-class)
+      - [streams](#streams)
+      - [Core java: what is JVM ?](#core-java-what-is-jvm-)
+      - [What is polymorphism?](#what-is-polymorphism)
+      - [Encapsulation and access modifier,the  types of access modifier,Which one is more protective?](#encapsulation-and-access-modifierthe--types-of-access-modifierwhich-one-is-more-protective)
+      - [How many constructors you used in java?](#how-many-constructors-you-used-in-java)
+      - [Can you do static overriding?](#can-you-do-static-overriding)
+      - [How you connected your db in java?](#how-you-connected-your-db-in-java)
+      - [Analytical question: Difference between method and function..](#analytical-question-difference-between-method-and-function-1)
+      - [How to handle class not found](#how-to-handle-class-not-found)
+      - [exception](#exception)
+      - [Java 8 interfaces and features](#java-8-interfaces-and-features)
+      - [MapException handling](#mapexception-handling)
+      - [Difference between string buffer and String Builder](#difference-between-string-buffer-and-string-builder)
+      - [What is java 8 features?](#what-is-java-8-features-1)
+      - [Describe Abstract in OOP](#describe-abstract-in-oop-1)
+      - [what is Java streaming?](#what-is-java-streaming-1)
+      - [difrenerence between Throw and Throws?](#difrenerence-between-throw-and-throws)
 # Java Interview Prep
 ## Coding Interview Questions
 * https://www.hackerrank.com/dashboard
@@ -1003,3 +1037,38 @@ switch(value) {
 ##### answer
 * static method can not be overridden in java
 * Method overriding has been designed to work with polymorphism
+
+### Core Java and OOP(Infosys questions)
+#### What is DAO?
+#### Difference between abstract classes and interfaces?
+#### What is Encapsulation and Abstraction?
+#### Analytical question: Difference between method and function.. 
+#### How to handle class not found exception
+#### Describe one thin that introduced in the java 8?
+#### Tell me about functional interface?
+#### Do you know Method References?
+#### Difference between lambda expression and method reference?
+#### Tell me about Stream API?
+#### When is each method of software development apply?
+#### What is java 8 features?
+#### Describe Abstract in OOP
+#### what is Java streaming?
+#### core java: polymorphism, abstract classes and interfaces(difference), AbstractionAws, aws 
+#### storage class
+#### streams
+#### Core java: what is JVM ? 
+#### What is polymorphism? 
+#### Encapsulation and access modifier,the  types of access modifier,Which one is more protective? 
+#### How many constructors you used in java?  
+#### Can you do static overriding?
+#### How you connected your db in java?
+#### Analytical question: Difference between method and function.. 
+#### How to handle class not found 
+#### exception
+#### Java 8 interfaces and features
+#### MapException handling
+#### Difference between string buffer and String Builder
+#### What is java 8 features?
+#### Describe Abstract in OOP
+#### what is Java streaming?
+#### difrenerence between Throw and Throws? 
