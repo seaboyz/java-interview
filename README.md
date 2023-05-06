@@ -1,6 +1,8 @@
 - [Java Interview Prep](#java-interview-prep)
   - [Coding Interview Questions](#coding-interview-questions)
   - [Conceptial Questions](#conceptial-questions)
+  ![Screenshot 2023-05-06 at 10 05 17 AM](https://user-images.githubusercontent.com/46071675/236632394-cae7e0c1-70a8-4c9e-98d2-5ce209d424d7.png)
+
     - [1. What is Java?](#1-what-is-java)
         - [Motivation](#motivation)
         - [Answer](#answer)
