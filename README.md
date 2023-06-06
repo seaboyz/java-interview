@@ -242,6 +242,8 @@
 
 ##### Answer
 
+![](./JDK_JRE_JVM.png)
+
 - JVM - Java virtual machine
 - It's the runtime environment for Java programs, a extra layer of abstraction over the hardware
 - Takes the compiled bytecode and executes it
